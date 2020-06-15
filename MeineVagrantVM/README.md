@@ -2,20 +2,20 @@
 
 ## 1. K1 
 ### 1.1 VirtualBox benützt
-![Virtualbox](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Datenbank.PNG "Virtualbox")
+![Virtualbox](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Virtualbox.PNG "Virtualbox")
 ### 1.2 Vagrant verwendet
 ![Vagrant](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/vagrant.PNG "Vagrant")
 ### 1.3 Visualstuio Code benützt
 ![Visualstudio](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Visualstudiocode.PNG "Visualstudio")
 ### 1.4 Git-Client gedownloadet
-![Git-Client](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Visualstudiocode.PNG "Git-Client")
+![Git-Client](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Git-client.PNG "Git-Client")
 ### 1.5 SSH-key für Client erstellt   
 ![SSH-Key](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/ssh-key.PNG "SSH-Key")
 
 
 ## 2. K2
 ### 2.1 GitHub Account wurde erstellt
-![Git-Hub](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Firewall.PNG "Git-Hub")
+![Git-Hub](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/GithubAccount.PNG "Git-Hub")
 ### 2.2 Git-Client wurde verwendet 
 ![Git-Client](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Git-client.PNG "Git-Client")
 ### 2.3 Dokumentation als Markdown vorhanden
@@ -80,12 +80,14 @@ Zu beginn habe ich mir die Powerpoint von Herr Rohr durchgelesen. Danach habe ic
 
 ### 3.5 Andere vorgefertigte VM aufgesetzt
 #### Ich habe eine VM mit einem Webserver und eine mit einer Datenbank aufgesetzt.
+![Datenbank](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Datenbank.PNG "Datenbank")
+![Webserver](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/webserver.PNG "Webserver")
 ### 3.6 Dokumentation des Projektes
 #### Zuerst habe ich ein Verzeichnis mit dem Namen MeineVagrantVM erstellt. Ich habe danach mit dem Befehel "vagrant init ubuntu/xenial64" | "vagrant up --provider virtualbox" eine VM angelegt. Danach habe ich mich mit ssh auf die VM verbunden. Danach habe ich angefangen, dass Vagrant file anzupassen. Damit das Vagrant File niche komplett unüberischtlich wird, habe ich für die Commands der Datenbank und des Webserver in zwei verschiedenen Files unterteilt. Dort habe ich die Commands für die installation etc. hinzugefügt. Ich hatte viele kleine Fehler die mir leider sehr viel Zeit geraubt haben. Ich konnte allerdings das ganze meistern und habe angefangen einige Testfälle durchzuführen, sodass ich eventuelle Fehler beheben kann bevor dies mir später vielleicht noch zum Verhängnis werden könnte. 
 
 ## K4
 ### 4.1 Firewall eingerichtet inkl. Rules
-![Firewallrule](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Git-client.PNG "Firewallrule")
+![Firewallrule](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Firewall.PNG "Firewallrule")
 ### 4.2 Benutzer und Rechtevergabe eingerichtet 
 #### Auf der Datenbank habe ich ein User root erstellt und diesem ein Passwort hinzugefügt
 ### 4.3 Reverse Proxy nicht vorhanden
