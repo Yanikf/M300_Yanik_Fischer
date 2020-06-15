@@ -92,7 +92,7 @@ Zu beginn habe ich mir die Powerpoint von Herr Rohr durchgelesen. Danach habe ic
 #### Auf der Datenbank habe ich ein User root erstellt und diesem ein Passwort hinzugefügt
 ### 4.3 Reverse Proxy nicht vorhanden
 ### 4.4 Zugang mit SSH-Tunnel abgesichert
-#### Der Zugang auf den Webserver erfolgt über ssh.
+#### Ich habe kein SSH-Tunnel eingerichtet, da der Server nur über den Lokalen Host erreichbar ist.
 ### 4.5 Sicherheitsmassnahmen sind Dokumentiert.
 #### Ich habe die Firewall installiert und beim Webserver Port 80 und 22 geöffnet. Bei der Datenbank habe ich den Port 22 geöffnet und für den Webserver den Port 3306, sodass der Webserver auf die Datenbank zugreiffen kann. Zudem habe ich ein den Benutzer root erstellt und diesem ein Passowort gesetzt. Der Zugriff erfolgt per SSH.
 
