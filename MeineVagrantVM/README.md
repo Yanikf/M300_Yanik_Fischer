@@ -2,17 +2,30 @@
 
 ## 1. K1 
 ### 1.1 VirtualBox benützt
+![Virtualbox](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Datenbank.PNG "Virtualbox")
 ### 1.2 Vagrant verwendet
+![Vagrant](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/vagrant.PNG "Vagrant")
 ### 1.3 Visualstuio Code benützt
+![Visualstudio](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Visualstudiocode.PNG "Visualstudio")
 ### 1.4 Git-Client gedownloadet
+![Git-Client](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Visualstudiocode.PNG "Git-Client")
 ### 1.5 SSH-key für Client erstellt   
-  
+![SSH-Key](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/ssh-key.PNG "SSH-Key")
 
 
 ## 2. K2
 ### 2.1 GitHub Account wurde erstellt
+![Git-Hub](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Firewall.PNG "Git-Hub")
 ### 2.2 Git-Client wurde verwendet 
+![Git-Client](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Git-client.PNG "Git-Client")
 ### 2.3 Dokumentation als Markdown vorhanden
+   Git Push:
+   
+   1. Soruce Control
+   2. git add "das gwünschte File oder Ordner"
+   3. git commit -m "Kommentar"
+   4. git push
+   
 ### 2.4 Markdown Editor (Visual Studio)
 ### 2.5 Markdown nach Punkten strukturiert
 ### 2.6 Persönlicher Wissenstand
@@ -36,7 +49,7 @@ Auch mit einem Markdown habe ich noch nie gearbeitet. Ich wusste jedoch, dass es
 
 #### Systemsicherheit
 Ich habe bereits im ÜK viele Firewalls mit verschiedenen Rules eingerichtet. Auch einen Proxy habe ich bereits konfiguriert, allerdings beides nur Manuell in der VM.
-Auch weiss ich was ein SSH-Tunnel ist und habe diesen auch bereits implementiert.
+Auch weiss ich was ein SSH-Tunnel ist und habe diesen auch bereits schon einmal implementiert.
 
 ### 2.7 Lernschritte
 
@@ -44,10 +57,20 @@ Zu beginn habe ich mir die Powerpoint von Herr Rohr durchgelesen. Danach habe ic
 
 ## K3
 ### 3.1 Bestehende VM aus Vagrant Cloud eingerichtet
+#### db.vm.box = "ubuntu/xenial64"
+#### web01.vm.box = "ubuntu/xenial64"
 ### 3.2 Vagrant Befehle verstanden
-### 3.3 Eingerichtete Umgebung Dokumentiert !!!
+#### vagrant init ubuntu/xenial64 (Vagrantfile erzeugen)
+#### vagrant up --provider virtualbox (Virtuelle Maschine erstellen und starten mit Virtualbox)
+#### vagrant ssh web (SSH-Verbindung zur VMs aufbauen)
+#### vagrant status (VM status anzeigen)
+#### vagrant destory -f (Vms löschen)
+#### vagrant provision (VM aktualisierung)
+#### vagrant port web (Weitergeleitete Ports anzeigen)
+### 3.3 Eingerichtete Umgebung Dokumentiert
+![Netzwerkplan](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/netzwerkplan.PNG "Netzwerkplan")
 ### 3.4 Funktionsweise getestet mit Testfällen
-| Testfalle     | Soll         | Sein  |
+| Testfälle     | Soll         | Sein  |
 | ------------- |:-------------:| -----:|
 |1. Login mit flaschem Kennwort      | Accsess denied | Accses denied |
 |2. Firewall läuft (sudo ufw status)      | active      |   active |
@@ -55,15 +78,19 @@ Zu beginn habe ich mir die Powerpoint von Herr Rohr durchgelesen. Danach habe ic
 |4. Firewall rule funktioniert.(curl 192.168.10.100:3307)  | Kein Output | Kein Output
 |5. Datenbank lässt sich per GUI erstellen | Datenbank wird hinzugefügt | Datenbank wird hinzugefügt
 
-### 3.5 Andere vorgefertigte VM aufgesetzt (Ubuntu)
+### 3.5 Andere vorgefertigte VM aufgesetzt
+#### Ich habe eine VM mit einem Webserver und eine mit einer Datenbank aufgesetzt.
 ### 3.6 Dokumentation des Projektes
 #### Zuerst habe ich ein Verzeichnis mit dem Namen MeineVagrantVM erstellt. Ich habe danach mit dem Befehel "vagrant init ubuntu/xenial64" | "vagrant up --provider virtualbox" eine VM angelegt. Danach habe ich mich mit ssh auf die VM verbunden. Danach habe ich angefangen, dass Vagrant file anzupassen. Damit das Vagrant File niche komplett unüberischtlich wird, habe ich für die Commands der Datenbank und des Webserver in zwei verschiedenen Files unterteilt. Dort habe ich die Commands für die installation etc. hinzugefügt. Ich hatte viele kleine Fehler die mir leider sehr viel Zeit geraubt haben. Ich konnte allerdings das ganze meistern und habe angefangen einige Testfälle durchzuführen, sodass ich eventuelle Fehler beheben kann bevor dies mir später vielleicht noch zum Verhängnis werden könnte. 
 
 ## K4
 ### 4.1 Firewall eingerichtet inkl. Rules
+![Firewallrule](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Git-client.PNG "Firewallrule")
 ### 4.2 Benutzer und Rechtevergabe eingerichtet 
+#### Auf der Datenbank habe ich ein User root erstellt und diesem ein Passwort hinzugefügt
 ### 4.3 Reverse Proxy nicht vorhanden
-### 4.4 Zugang mit SSH-Tunnel abgesichert.
+### 4.4 Zugang mit SSH-Tunnel abgesichert
+#### Der Zugang auf den Webserver erfolgt über ssh.
 ### 4.5 Sicherheitsmassnahmen sind Dokumentiert.
 #### Ich habe die Firewall installiert und beim Webserver Port 80 und 22 geöffnet. Bei der Datenbank habe ich den Port 22 geöffnet und für den Webserver den Port 3306, sodass der Webserver auf die Datenbank zugreiffen kann. Zudem habe ich ein den Benutzer root erstellt und diesem ein Passowort gesetzt. Der Zugriff erfolgt per SSH.
 
