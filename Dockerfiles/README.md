@@ -2,18 +2,18 @@
 
 ## 1. K1 
 ### 1.1 VirtualBox benützt
-
-### 1.2 Vagrant verwendet
-
-### 1.3 Visualstuio Code benützt
-
-### 1.4 Git-Client gedownloadet
-
-### 1.5 SSH-key für Client erstellt  
-
+![Virtualbox](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Virtualbox.PNG "Virtualbox")
+### 1.2 Visualstuio Code benützt
+![Visualstudio](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Visualstudiocode.PNG "Visualstudio")
+### 1.3 Git-Client gedownloadet
+![Git-Client](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Git-client.PNG "Git-Client")
+### 1.4 SSH-key für Client erstellt  
+![SSH-Key](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/ssh-key.PNG "SSH-Key")
 ## 2. K2
 ### 2.1 GitHub Account wurde erstellt
+![Git-Hub](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/GithubAccount.PNG "Git-Hub")
 ### 2.2 Git-Client wurde verwendet 
+![Git-Client](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/Dockerfiles/images/Git-client.PNG "Git-Client")
 ### 2.3 Dokumentation als Markdown vorhanden
  Git Push:
    
