@@ -55,6 +55,9 @@ Da ich sicher via HTTPS auf meinen Container zugreifen möchte muss ich dies ebe
 #### [Webseite]
 Ich habe nun noch ein Webtemplate eingebaut, wo Hextris darauf läuft. Jetzt muss das Dockerfile noch gebuilded werden und dann kann der Container getestet werden. Der rest des Codes wird in K4 erklärt.
 
+### Netzwerkplan
+![Netzwerkplan2](https://github.com/Yanikf/M300_Yanik_Fischer/blob/master/MeineVagrantVM/Markdown-img/Netzwerkplan2.PNG "Netzwerkplan2")
+
 ### Dockerbefehle:
 docker rmi: Mit diesem Command können die Images entfernt werden.
 
