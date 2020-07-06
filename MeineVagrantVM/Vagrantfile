@@ -1,4 +1,4 @@
-Vagrant.configure("2") do |config|
+Vagrant.configure("2") do |config| #"2" ist die Vagrantversion
   config.vm.define "database" do |db|
     db.vm.box = "ubuntu/xenial64"
     db.vm.provider "virtualbox" do |vb|
